@@ -1,0 +1,147 @@
+/* Reset CSS & Cores*/
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    --preta-cinza: #272727;
+    --cinza: #AAA;
+    --branco: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* cabeçalho do Projeto */ 
+body {
+    background: var(--preta-cinza);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    /* a Propriedade "flex-direction: row" não é necessária pois já e default da propriedade anterior */
+    align-items: center;
+    justify-content: space-between;
+    background: var(--preta);
+    padding: 0 10px;
+}
+
+header  .logo {
+    height: 3rem;
+    width: 11rem;
+    margin: 0.50rem 0 0.75rem 1rem;
+}
+
+header  .atalho {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    
+}
+
+.atalho:hover{
+    color: var(--branco);
+    transition-duration: 1000ms;
+}
+
+.atalho:last-of-type{
+    margin-right: 0;
+}
+
+/* Filme Principal: John Wick 3 */
+
+main .filme-principal {
+    margin-top: 2rem;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    justify-content: center;
+    
+}
+
+
+
+main .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,var(--preta-cinza) 20%, transparent 50%), url('../img/Background-john-wick.jpg') right no-repeat; 
+    background-size: 100% ;
+    /*background-repeat: no-repeat;
+    background-position: right;*/
+    border-radius: 2px;
+    box-shadow:10px 10px 25px black;
+    transition-duration: 500ms;
+    padding-left: 1rem;
+}
+
+main .container:hover {
+    width: 92%;
+    transition-duration: 500ms;
+}
+
+.titulo {
+    margin: 2rem; 
+    width: 22%;
+    
+}
+
+.sinopse {
+    margin-bottom: 1rem;
+}
+
+.descricao {
+    width: 600px;
+    text-shadow: 3px 3px 3px black;
+    font-size: 1.1rem;
+}
+
+.opcoes {
+    display: flex;
+    width: 50%;
+    margin-top: 2rem;
+    padding-left: 5rem;
+}
+
+.fas {
+    margin-right:10px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    
+    box-shadow:2px 2px 5px black;
+    color:  white;
+    margin-right: 3rem;
+    padding: 1rem 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;  
+    letter-spacing: 0.5px;  
+}
+
+.botao:hover {
+    
+    color: black;
+    background: white;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.filmes {
+    margin: 5rem 0 1rem 6rem;
+}
+
+.carrossel-filmes {
+    margin: 2rem 6rem 0;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
