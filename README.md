@@ -9,4 +9,4 @@ Projeto realizado em parceria com a DIO.
 
 - CSS3;
 
-- JavaScript;
+- JQuery;
